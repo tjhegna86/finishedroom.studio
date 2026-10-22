@@ -1,97 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>FinishedRoom.Studio – A Higher Feeling</title>
-  <style>
-    :root {
-      --cream: #E8E2D8;
-      --beige: #CFC7BC;
-      --charcoal: #3C3C3C;
-      --gold: #C2A878;
-      --soft-bg: #F5F2ED;
-    }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FinishedRoom.Studio</title>
 
-    body {
-      margin: 0;
-      font-family: Inter, sans-serif;
-      background-color: var(--cream);
-      color: var(--charcoal);
-      line-height: 1.6;
-    }
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
 
-    h1, h2, h3 {
-      font-family: "Cormorant Garamond", serif;
-      font-weight: 500;
-      letter-spacing: 0.5px;
-      margin-bottom: 10px;
-      color: var(--charcoal);
-    }
+    <style>
+        :root {
+            --charcoal: #3C3C3C;
+            --cream: #E8E2D8;
+            --sand: #CFC7BC;
+            --warm-gray: #A8A29A;
+            --gold: #C2A878;
+        }
 
-    .container {
-      width: 90%;
-      max-width: 1100px;
-      margin: auto;
-      padding: 60px 0;
-    }
+        body {
+            margin: 0;
+            background: var(--cream);
+            color: var(--charcoal);
+            font-family: 'Inter', sans-serif;
+            line-height: 1.8;
+        }
 
-    .hero {
-      text-align: center;
-      padding: 140px 20px 100px;
-      background-color: var(--cream);
-    }
+        header {
+            padding: 60px 20px;
+            text-align: center;
+        }
 
-    .hero h1 {
-      font-size: 3rem;
-      margin-bottom: 20px;
-    }
+        .logo {
+            width: 140px;
+            margin-bottom: 30px;
+        }
 
-    .hero p {
-      font-size: 1.2rem;
-      color: var(--charcoal);
-      max-width: 700px;
-      margin: auto;
-    }
+        h1 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 64px;
+            font-weight: 300;
+            margin: 0;
+            line-height: 1.08;
+        }
 
-    .gallery {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 40px;
-      margin-top: 60px;
-    }
+        .tagline {
+            font-size: 22px;
+            margin-top: 10px;
+            font-family: 'Cormorant Garamond', serif;
+        }
 
-    .gallery img {
-      width: 45%;
-      border-radius: 8px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-    }
+        .intro {
+            max-width: 600px;
+            margin: 30px auto;
+            font-size: 18px;
+        }
 
-    footer {
-      text-align: center;
-      padding: 40px 0;
-      font-size: 0.9rem;
-      color: var(--charcoal);
-    }
-  </style>
+        .cta {
+            display: inline-block;
+            margin-top: 40px;
+            padding: 16px 32px;
+            background: var(--gold);
+            color: white;
+            text-decoration: none;
+            font-size: 14px;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            border-radius: 4px;
+            transition: background 0.25s ease;
+        }
+
+        .cta:hover {
+            background: #B39868;
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px;
+            font-size: 14px;
+            color: var(--warm-gray);
+        }
+    </style>
 </head>
+
 <body>
-  <section class="hero">
+
+<header>
+    <!-- Replace this with your actual logo file -->
+    <img src="logo.png" alt="FinishedRoom.Studio Logo" class="logo">
+
     <h1>FinishedRoom.Studio</h1>
-    <p>Elevate your space with AI‑curated canvas art designed to complete your room.</p>
-  </section>
+    <div class="tagline">Art that completes the room.</div>
 
-  <div class="container">
-    <h2>Before & After Transformation</h2>
-    <div class="gallery">
-      <img src="before.jpg" alt="Before Room">
-      <img src="after.jpg" alt="After Room">
-    </div>
-  </div>
+    <p class="intro">
+        Curated canvas prints crafted with archival pigment inks, warm editorial aesthetics, and quiet luxury intention. 
+        Thoughtfully sized for real homes. Framed. Finished. Delivered.
+    </p>
 
-  <footer>
-    © 2026 FinishedRoom.Studio — A Higher Feeling
-  </footer>
+    <a class="cta" href="mailto:finishedroomstudio@gmail.com?subject=Room%20Design%20Order">
+        Begin Your Room Design
+    </a>
+</header>
+
+<footer>
+    © 2026 FinishedRoom.Studio — Established 2019
+</footer>
+
 </body>
 </html>

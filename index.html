@@ -1,222 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>FinishedRoom.Studio — A Higher Feeling</title>
-
-<style>
-    /* BRAND COLORS */
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FinishedRoom.Studio – A Higher Feeling</title>
+  <style>
     :root {
-        --cream: #E8E2D8;
-        --beige: #CFC7BC;
-        --charcoal: #3C3C3C;
-        --gold: #C2A878;
-        --soft-bg: #F5F2ED;
+      --cream: #E8E2D8;
+      --beige: #CFC7BC;
+      --charcoal: #3C3C3C;
+      --gold: #C2A878;
+      --soft-bg: #F5F2ED;
     }
 
     body {
-        margin: 0;
-        font-family: Inter, sans-serif;
-        background-color: var(--cream);
-        color: var(--charcoal);
-        line-height: 1.6;
+      margin: 0;
+      font-family: Inter, sans-serif;
+      background-color: var(--cream);
+      color: var(--charcoal);
+      line-height: 1.6;
     }
 
     h1, h2, h3 {
-        font-family: "Cormorant Garamond", serif;
-        font-weight: 500;
-        letter-spacing: 0.5px;
-        margin-bottom: 10px;
-        color: var(--charcoal);
+      font-family: "Cormorant Garamond", serif;
+      font-weight: 500;
+      letter-spacing: 0.5px;
+      margin-bottom: 10px;
+      color: var(--charcoal);
     }
 
     .container {
-        width: 90%;
-        max-width: 1100px;
-        margin: auto;
-        padding: 60px 0;
+      width: 90%;
+      max-width: 1100px;
+      margin: auto;
+      padding: 60px 0;
     }
 
-    /* HERO */
     .hero {
-        text-align: center;
-        padding: 140px 20px 100px;
-        background-color: var(--cream);
+      text-align: center;
+      padding: 140px 20px 100px;
+      background-color: var(--cream);
     }
 
     .hero h1 {
-        font-size: 52px;
-        margin-bottom: 20px;
+      font-size: 3rem;
+      margin-bottom: 20px;
     }
 
     .hero p {
-        font-size: 22px;
-        margin-bottom: 40px;
-        color: var(--charcoal);
+      font-size: 1.2rem;
+      color: var(--charcoal);
+      max-width: 700px;
+      margin: auto;
     }
 
-    .cta {
-        background-color: var(--beige);
-        color: var(--charcoal);
-        padding: 16px 32px;
-        border-radius: 6px;
-        font-size: 18px;
-        text-decoration: none;
-        display: inline-block;
-        transition: 0.2s;
-    }
-
-    .cta:hover {
-        background-color: #D9D3C8;
-    }
-
-    /* SECTIONS */
-    .section {
-        margin: 100px 0;
-    }
-
-    /* BEFORE / AFTER */
-    .before-after {
-        display: flex;
-        gap: 40px;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    .ba-box {
-        background-color: var(--soft-bg);
-        padding: 24px;
-        border-radius: 12px;
-        width: 45%;
-        min-width: 280px;
-        box-shadow: 0 4px 14px rgba(0,0,0,0.08);
-        text-align: center;
-    }
-
-    .ba-box img {
-        width: 100%;
-        border-radius: 10px;
-    }
-
-    /* HOW IT WORKS */
-    .how-it-works {
-        display: flex;
-        gap: 40px;
-        flex-wrap: wrap;
-        justify-content: center;
-        text-align: center;
-    }
-
-    .step {
-        width: 30%;
-        min-width: 240px;
-        background-color: var(--soft-bg);
-        padding: 24px;
-        border-radius: 12px;
-        box-shadow: 0 4px 14px rgba(0,0,0,0.08);
-    }
-
-    /* GALLERY */
     .gallery {
-        display: flex;
-        gap: 30px;
-        flex-wrap: wrap;
-        justify-content: center;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 40px;
+      margin-top: 60px;
     }
 
     .gallery img {
-        width: 30%;
-        min-width: 240px;
-        border-radius: 12px;
-        box-shadow: 0 4px 14px rgba(0,0,0,0.08);
+      width: 45%;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
     }
 
-    /* FINAL CTA */
-    .final-cta {
-        text-align: center;
-        margin-top: 80px;
-    }
-
-    /* FOOTER */
     footer {
-        text-align: center;
-        padding: 60px 20px;
-        background-color: var(--beige);
-        color: var(--charcoal);
-        margin-top: 80px;
-        font-size: 16px;
+      text-align: center;
+      padding: 40px 0;
+      font-size: 0.9rem;
+      color: var(--charcoal);
     }
-</style>
+  </style>
 </head>
-
 <body>
+  <section class="hero">
+    <h1>FinishedRoom.Studio</h1>
+    <p>Elevate your space with AI‑curated canvas art designed to complete your room.</p>
+  </section>
 
-<!-- HERO -->
-<section class="hero">
-    <h1>A Higher Feeling for Your Room</h1>
-    <p>Designer‑curated wall art that finishes your space.</p>
-    <a class="cta" href="#">Upload Your Room Photo</a>
-</section>
+  <div class="container">
+    <h2>Before & After Transformation</h2>
+    <div class="gallery">
+      <img src="before.jpg" alt="Before Room">
+      <img src="after.jpg" alt="After Room">
+    </div>
+  </div>
 
-<div class="container">
-
-    <!-- BEFORE / AFTER -->
-    <section class="section">
-        <h2>See Your Room Finished</h2>
-        <div class="before-after">
-            <div class="ba-box">
-                <h3>Before</h3>
-                <img src="before.jpg" alt="Room before">
-            </div>
-            <div class="ba-box">
-                <h3>After</h3>
-                <img src="after.jpg" alt="Room after">
-            </div>
-        </div>
-    </section>
-
-    <!-- HOW IT WORKS -->
-    <section class="section">
-        <h2>How It Works</h2>
-        <div class="how-it-works">
-            <div class="step">
-                <h3>1. Upload a Photo</h3>
-                <p>Show us your room from any angle.</p>
-            </div>
-            <div class="step">
-                <h3>2. We Curate Art</h3>
-                <p>Premium abstract pieces chosen for your space.</p>
-            </div>
-            <div class="step">
-                <h3>3. You Get a Finished Room</h3>
-                <p>Delivered as a premium canvas.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- GALLERY -->
-    <section class="section">
-        <h2>Curated for Real Rooms</h2>
-        <div class="gallery">
-            <img src="art1.jpg" alt="Art example 1">
-            <img src="art2.jpg" alt="Art example 2">
-            <img src="art3.jpg" alt="Art example 3">
-        </div>
-    </section>
-
-    <!-- FINAL CTA -->
-    <section class="final-cta">
-        <h2>Your Room Is Good. Let’s Make It Feel Finished.</h2>
-        <a class="cta" href="#">Upload Your Room Photo</a>
-    </section>
-
-</div>
-
-<footer>
-    <p>FinishedRoom.Studio</p>
-    <p>Quiet Luxury for Real Spaces</p>
-</footer>
-
+  <footer>
+    © 2026 FinishedRoom.Studio — A Higher Feeling
+  </footer>
 </body>
 </html>

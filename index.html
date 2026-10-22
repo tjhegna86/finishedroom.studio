@@ -6,11 +6,20 @@
 <title>FinishedRoom.Studio — A Higher Feeling</title>
 
 <style>
+    /* BRAND COLORS */
+    :root {
+        --cream: #E8E2D8;
+        --beige: #CFC7BC;
+        --charcoal: #3C3C3C;
+        --gold: #C2A878;
+        --soft-bg: #F5F2ED;
+    }
+
     body {
         margin: 0;
         font-family: Inter, sans-serif;
-        background-color: #E8E2D8;
-        color: #3C3C3C;
+        background-color: var(--cream);
+        color: var(--charcoal);
         line-height: 1.6;
     }
 
@@ -19,6 +28,7 @@
         font-weight: 500;
         letter-spacing: 0.5px;
         margin-bottom: 10px;
+        color: var(--charcoal);
     }
 
     .container {
@@ -28,25 +38,28 @@
         padding: 60px 0;
     }
 
+    /* HERO */
     .hero {
         text-align: center;
-        padding: 120px 20px 80px;
+        padding: 140px 20px 100px;
+        background-color: var(--cream);
     }
 
     .hero h1 {
-        font-size: 48px;
+        font-size: 52px;
         margin-bottom: 20px;
     }
 
     .hero p {
-        font-size: 20px;
+        font-size: 22px;
         margin-bottom: 40px;
+        color: var(--charcoal);
     }
 
     .cta {
-        background-color: #CFC7BC;
-        color: #3C3C3C;
-        padding: 14px 28px;
+        background-color: var(--beige);
+        color: var(--charcoal);
+        padding: 16px 32px;
         border-radius: 6px;
         font-size: 18px;
         text-decoration: none;
@@ -58,10 +71,12 @@
         background-color: #D9D3C8;
     }
 
+    /* SECTIONS */
     .section {
-        margin: 80px 0;
+        margin: 100px 0;
     }
 
+    /* BEFORE / AFTER */
     .before-after {
         display: flex;
         gap: 40px;
@@ -70,20 +85,21 @@
     }
 
     .ba-box {
-        background-color: #F5F2ED;
-        padding: 20px;
-        border-radius: 10px;
+        background-color: var(--soft-bg);
+        padding: 24px;
+        border-radius: 12px;
         width: 45%;
         min-width: 280px;
-        box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+        box-shadow: 0 4px 14px rgba(0,0,0,0.08);
         text-align: center;
     }
 
     .ba-box img {
         width: 100%;
-        border-radius: 8px;
+        border-radius: 10px;
     }
 
+    /* HOW IT WORKS */
     .how-it-works {
         display: flex;
         gap: 40px;
@@ -95,12 +111,13 @@
     .step {
         width: 30%;
         min-width: 240px;
-        background-color: #F5F2ED;
-        padding: 20px;
-        border-radius: 10px;
-        box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+        background-color: var(--soft-bg);
+        padding: 24px;
+        border-radius: 12px;
+        box-shadow: 0 4px 14px rgba(0,0,0,0.08);
     }
 
+    /* GALLERY */
     .gallery {
         display: flex;
         gap: 30px;
@@ -111,15 +128,24 @@
     .gallery img {
         width: 30%;
         min-width: 240px;
-        border-radius: 10px;
-        box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+        border-radius: 12px;
+        box-shadow: 0 4px 14px rgba(0,0,0,0.08);
     }
 
+    /* FINAL CTA */
+    .final-cta {
+        text-align: center;
+        margin-top: 80px;
+    }
+
+    /* FOOTER */
     footer {
         text-align: center;
         padding: 60px 20px;
-        background-color: #D9D3C8;
+        background-color: var(--beige);
+        color: var(--charcoal);
         margin-top: 80px;
+        font-size: 16px;
     }
 </style>
 </head>
@@ -180,7 +206,7 @@
     </section>
 
     <!-- FINAL CTA -->
-    <section class="section" style="text-align:center;">
+    <section class="final-cta">
         <h2>Your Room Is Good. Let’s Make It Feel Finished.</h2>
         <a class="cta" href="#">Upload Your Room Photo</a>
     </section>
